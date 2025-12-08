@@ -34,7 +34,7 @@
 
   },
 
-  "onCreateCommand": "npm install -g firebase-tools npm-check-updates",
+  "onCreateCommand": "npm install -g tsx firebase-tools npm-check-updates @google/gemini-cli @anthropic-ai/claude-code @openai/codex @github/copilot",
   // Run after container is created and features are applied
-  "postCreateCommand": "cd extension/functions && npm install --no-fund --no-audit",
+  "postCreateCommand": "true",
 }
