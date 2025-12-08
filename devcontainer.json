@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
 
-  "name": "Ship.Fail Devcontainer Environment",
+  "name": "🚢 Ship.Fail // AI Hack Lab",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 
   "mounts": [
@@ -14,32 +14,45 @@
   
   "features": {
     // Google Cloud CLI Feature (3rd-party allowed)
-    "ghcr.io/dhoeric/features/google-cloud-cli:1.0.1": {
-      "version": "latest"
-    },
+    "ghcr.io/dhoeric/features/google-cloud-cli:1.0.1": { "version": "latest" },
+
+    "ghcr.io/devcontainers/features/common-utils:2": {},
 
     // Node Feature (Spec v1-compliant), replaces node + npm-package
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "lts"
-    },
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" },
 
     // Java 17 for Firebase Emulator Suite
-    "ghcr.io/devcontainers/features/java:1": {
-      "version": "17"
-    },
+    "ghcr.io/devcontainers/features/java:1": { "version": "17" },
 
-    // Deno runtime
-    "ghcr.io/denoland/devcontainer-features/deno:1": {
-      "version": "latest"
-    },
+    // ✅ Deno via devcontainers-community feature
+    "ghcr.io/devcontainers-community/features/deno:1": { "version": "latest" },
 
-    "ghcr.io/devcontainers/features/sshd:1": {
-        "version": "latest"
-    }
+    "ghcr.io/devcontainers/features/sshd:1": { "version": "latest" }
 
   },
 
-  "onCreateCommand": "npm install -g tsx firebase-tools npm-check-updates @google/gemini-cli @anthropic-ai/claude-code @openai/codex @github/copilot",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "denoland.vscode-deno"
+      ]
+    }
+  },
+
+  "onCreateCommand": [
+    "npm",
+    "install",
+    "-g",
+
+    "tsx",
+    "firebase-tools",
+    "npm-check-updates",
+    
+    "@google/gemini-cli",
+    "@anthropic-ai/claude-code",
+    "@openai/codex",
+    "@github/copilot"
+  ],
   // Run after container is created and features are applied
   "postCreateCommand": "true"
 }
