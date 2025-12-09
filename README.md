@@ -15,9 +15,15 @@ This repo is the **golden devcontainer template** for Ship.Fail projects.
 Copy it in a Ship.Fail project repo.
 
 ```sh
-mkdir -p .devcontainer
+mkdir -p .devcontainer/features/npm-packages
+
 curl -o .devcontainer/devcontainer.json \
   https://raw.githubusercontent.com/ShipFail/devcontainer/refs/heads/main/devcontainer.json
+
+curl -o .devcontainer/features/npm-packages/install.sh \
+  https://raw.githubusercontent.com/ShipFail/devcontainer/refs/heads/main/features/npm-packages/install.sh
+curl -o .devcontainer/features/npm-packages/devcontainer-feature.json \
+  https://raw.githubusercontent.com/ShipFail/devcontainer/refs/heads/main/features/npm-packages/devcontainer-feature.json
 ```
 
 That's it.
