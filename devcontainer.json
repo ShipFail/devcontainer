@@ -5,13 +5,11 @@
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
 
   "mounts": [
-    // other mounts you might already have...
-
-    // Mount your host ~/.gitconfig into the container home.
     // For Linux/macOS host:
-    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached"
+    "source=${localEnv:HOME}/.gitconfig,target=/home/vscode/.gitconfig,type=bind,consistency=cached",
+    "source=${localEnv:HOME}/.gemini,target=/home/vscode/.gemini,type=bind,consistency=cached"
   ],
-  
+
   "features": {
     "ghcr.io/devcontainers/features/sshd:1":            { "version": "latest" },
     "ghcr.io/devcontainers-community/features/deno:1":  { "version": "latest" },   
