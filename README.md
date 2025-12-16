@@ -19,11 +19,11 @@ mkdir -p .devcontainer/
 curl -o .devcontainer/devcontainer.json \
   https://shipfail.github.io/devcontainer/devcontainer.json
 
-mkdir -p .devcontainer/features/npm-packages
-curl -o .devcontainer/features/npm-packages/devcontainer-feature.json \
-  https://shipfail.github.io/devcontainer/features/npm-packages/devcontainer-feature.json
-curl -o .devcontainer/features/npm-packages/install.sh \
-  https://shipfail.github.io/devcontainer/features/npm-packages/install.sh
+mkdir -p .devcontainer/features/any-packages
+curl -o .devcontainer/features/any-packages/devcontainer-feature.json \
+  https://shipfail.github.io/devcontainer/features/any-packages/devcontainer-feature.json
+curl -o .devcontainer/features/any-packages/install.sh \
+  https://shipfail.github.io/devcontainer/features/any-packages/install.sh
 
 mkdir -p .devcontainer/features/gh-auto-auth
 curl -o .devcontainer/features/gh-auto-auth/devcontainer-feature.json \

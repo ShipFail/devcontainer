@@ -25,18 +25,23 @@
     
     "./features/gh-auto-auth": {},
 
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "ffmpeg,imagemagick,libvips,webp,pandoc,texlive-xetex,texlive-latex-recommended,texlive-fonts-recommended"
-    },
-    "./features/npm-packages": {
+    "./features/any-packages": {
       "packages": [
-        "tsx",
-        "firebase-tools",
-        "npm-check-updates",
-        "@google/gemini-cli",
-        "@anthropic-ai/claude-code",
-        "@openai/codex",
-        "@github/copilot"
+        "ffmpeg",
+        "imagemagick",
+        "libvips",
+        "webp",
+        "pandoc",
+        "texlive-xetex",
+        "texlive-latex-recommended",
+        "texlive-fonts-recommended",
+        "npm:tsx",
+        "npm:firebase-tools",
+        "npm:npm-check-updates",
+        "npm:@google/gemini-cli",
+        "npm:@anthropic-ai/claude-code",
+        "npm:@openai/codex",
+        "npm:@github/copilot"
       ]
     }
   },
