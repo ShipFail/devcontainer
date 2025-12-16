@@ -15,15 +15,23 @@ This repo is the **golden devcontainer template** for Ship.Fail projects.
 Copy it in a Ship.Fail project repo.
 
 ```sh
-mkdir -p .devcontainer/features/npm-packages
-
+mkdir -p .devcontainer/
 curl -o .devcontainer/devcontainer.json \
   https://shipfail.github.io/devcontainer/devcontainer.json
 
-curl -o .devcontainer/features/npm-packages/install.sh \
-  https://shipfail.github.io/devcontainer/features/npm-packages/install.sh
+mkdir -p .devcontainer/features/npm-packages
 curl -o .devcontainer/features/npm-packages/devcontainer-feature.json \
   https://shipfail.github.io/devcontainer/features/npm-packages/devcontainer-feature.json
+curl -o .devcontainer/features/npm-packages/install.sh \
+  https://shipfail.github.io/devcontainer/features/npm-packages/install.sh
+
+mkdir -p .devcontainer/features/gh-auto-auth
+curl -o .devcontainer/features/gh-auto-auth/devcontainer-feature.json \
+  https://shipfail.github.io/devcontainer/features/gh-auto-auth/devcontainer-feature.json
+curl -o .devcontainer/features/gh-auto-auth/install.sh \
+  https://shipfail.github.io/devcontainer/features/gh-auto-auth/install.sh
+curl -o .devcontainer/features/gh-auto-auth/auth-script.sh \
+  https://shipfail.github.io/devcontainer/features/gh-auto-auth/auth-script.sh
 ```
 
 That's it.
