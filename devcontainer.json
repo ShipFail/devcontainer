@@ -32,18 +32,20 @@
         "ffmpeg",
         "imagemagick",
         "libvips",
-        "webp",
         "pandoc",
-        "texlive-xetex",
-        "texlive-latex-recommended",
+        "ripgrep",
         "texlive-fonts-recommended",
-        "npm:tsx",
+        "texlive-latex-recommended",
+        "texlive-xetex",
+        "webp",
+
         "npm:firebase-tools",
+        "npm:tsx",
         "npm:npm-check-updates",
-        "npm:@google/gemini-cli",
         "npm:@anthropic-ai/claude-code",
-        "npm:@openai/codex",
-        "npm:@github/copilot"
+        "npm:@github/copilot",
+        "npm:@google/gemini-cli",
+        "npm:@openai/codex"
       ]
     }
   },
